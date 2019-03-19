@@ -1,6 +1,9 @@
 #-*- coding:utf-8 -*-
-import HTMLTestRunner,time,os,unittest
-from pyrequest.interface.add_event_test import AddEventTest,TestInt
+import HTMLTestRunner,time,os,unittest,sys
+currentpath=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(currentpath)
+from interface.add_event_test import AddEventTest,TestInt
+#from pyrequest.interface.add_event_test import AddEventTest,TestInt
 now=time.strftime("%Y-%m-%d %H-%M-%S",time.localtime())
 
 path=os.path.dirname(os.path.abspath(__file__))+"\\report"+"\\%s.html"%now
