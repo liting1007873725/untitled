@@ -42,7 +42,7 @@ import math
 
 class TestInt(unittest.TestCase):
     @parameterized.expand([
-        ('1',2, 3, 5),('2',3, 5, 8),
+        ('1',2, 3, 5),('2',3, 5, 8),('3',13, 15, 18),
     ])
     def test_add(self,name,a, b, expected):
         self.assertEqual(a+b,expected)
