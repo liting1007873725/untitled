@@ -5,8 +5,8 @@ sys.path.append(currentpath)
 from interface.add_event_test import AddEventTest,TestInt
 #from pyrequest.interface.add_event_test import AddEventTest,TestInt
 now=time.strftime("%Y-%m-%d %H-%M-%S",time.localtime())
-
-path=os.path.dirname(os.path.abspath(__file__))+"\\report"+"\\%s.html"%now
+path=os.path.dirname(os.path.abspath(__file__))+"\\report"+"\\test.html"
+#path=os.path.dirname(os.path.abspath(__file__))+"\\report"+"\\%s.html"%now
 print path
 suite=unittest.TestSuite()
 suite.addTests(unittest.makeSuite(AddEventTest))
